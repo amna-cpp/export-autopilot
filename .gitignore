@@ -1,0 +1,10 @@
+node_modules/
+.env
+data/
+
+# never commit demo/loom videos or recordings
+*.mp4
+*.mov
+*.m4a
+*.webm
+.DS_Store

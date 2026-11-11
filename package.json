@@ -1,0 +1,24 @@
+{
+  "name": "export-autopilot",
+  "version": "1.0.0",
+  "description": "Gmail agent that spots export enquiries and replies within seconds, strictly from the company's export policy",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "auth": "node src/auth.js",
+    "start": "node src/index.js",
+    "once": "node src/index.js --once",
+    "demo": "node src/demo.js",
+    "eval": "node scripts/eval.js",
+    "sim": "node scripts/sim-inbox.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.60.0",
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0"
+  }
+}
